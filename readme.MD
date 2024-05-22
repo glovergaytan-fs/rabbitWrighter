@@ -86,6 +86,6 @@ If you're using node then use ([https://www.npmjs.com/package/dotenv](dotenv)) i
 Security: Be cautious about storing sensitive information like passwords directly in your code or .env file. Consider more secure alternatives for production environments.
 Facebook's Terms of Service: Ensure that your automation activities comply with Facebook's terms and conditions.
 
-Playwright Documentation: [https://playwright.dev/python/docs/intro](https://playwright.dev/python/docs/intro))
-Rabbit Hole: ([https://hole.rabbit.tech/](https://hole.rabbit.tech/))
-Facebook Messenger: ([https://www.messenger.com/](https://www.messenger.com/))
+Playwright Documentation: [https://playwright.dev/python/docs/intro](https://playwright.dev/python/docs/intro)
+Rabbit Hole: [https://hole.rabbit.tech/](https://hole.rabbit.tech/)
+Facebook Messenger: [https://www.messenger.com/](https://www.messenger.com/)

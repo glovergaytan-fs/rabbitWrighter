@@ -1,7 +1,7 @@
+from playwright.sync_api import sync_playwright
 import os
 import time
 from dotenv import load_dotenv
-from playwright.sync_api import sync_playwright
 
 load_dotenv()
 your_username = os.getenv("YOUR_USERNAME")
@@ -35,7 +35,7 @@ def search_messenger(page, contact_name):
 
 def main():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True) 
+        browser = p.chromium.launch(headless=False) 
         page = browser.new_page()
         logged_in_hole = False 
         previous_text_content = '' 
@@ -58,7 +58,7 @@ def main():
             text_content = page.locator('div.whitespace-pre-wrap.pb-\\[80px\\].text-base.text-white.focus\\:outline-none').inner_text()
             print("Text content:", text_content)
 
-            if text_content.lower().startswith("message") and text_content != previous_text_content:
+            if 'message' in text_content.lower() and text_content != previous_text_content:
                 open_facebook_messenger(browser, text_content)
                 print("Action triggered because the message starts with 'message' and is new")
                 previous_text_content = text_content 

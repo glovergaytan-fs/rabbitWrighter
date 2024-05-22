@@ -27,14 +27,14 @@ from playwright.sync_api import sync_playwright
 # Load environment variables from .env file
 load_dotenv()  # Load environment variables 
 
-# Access environment variables
+## Access environment variables
 your_username = os.getenv("YOUR_USERNAME")
 your_password = os.getenv('YOUR_PASSWORD')
 fb_email = os.getenv("FB_EMAIL")
 fb_password = os.getenv('FB_PASSWORD')
 
-# ... rest of your code ... ```
-Explanation:
+ ... rest of your code ... ```
+##Explanation:
 
 Import load_dotenv:
 
@@ -49,32 +49,34 @@ In your code, it gets the username, password, Facebook email, and password from 
 How .env Files and python-dotenv Work:
 
 .env File: You create a file named .env in your project's root directory. Inside this file, you store sensitive information or configuration settings as key-value pairs, like this:
+
 YOUR_USERNAME=your_actual_username
 YOUR_PASSWORD=your_secret_password
 FB_EMAIL=your_facebook_email@example.com
 FB_PASSWORD=your_facebook_password
+
 Security: It's important to never commit your .env file to version control (like Git). This keeps your sensitive data out of your repository.
+
 Environment Variables: When load_dotenv() is called, it takes the contents of the .env file and sets them as environment variables within your Python program's current process.
+
 Access: You can then access these environment variables using os.getenv().
 Benefits:
 
 Security: Keeps sensitive data like passwords and API keys out of your codebase.
+
 Configuration Management: Easily change configurations without modifying your code.
+
 Portability: Makes it simple to run your application in different environments (development, testing, production) by using different .env files.
-
-Add your credentials and configuration to .env:
-
-YOUR_USERNAME=your_rabbit_hole_username
-YOUR_PASSWORD=your_rabbit_hole_password
-FB_EMAIL=your_facebook_email
-FB_PASSWORD=your_facebook_password 
 
 How it Works
 
 Login: The script logs into your Rabbit Hole account.
+
 Journal Entry: It navigates to your journal details page and continuously checks for new entries that start with "message".
+
 Facebook Messenger: If a new message entry is found, the script opens Facebook Messenger in a new tab and sends the message content to the specified Facebook contact.
-Running the Script
+
+#Running the Script
 Start the script:
 
 python fb_messenger.py
@@ -83,9 +85,7 @@ Important Notes
 
 If you're using node then use ([https://www.npmjs.com/package/dotenv](dotenv)) instead. (eww)
 
-Security: Be cautious about storing sensitive information like passwords directly in your code or .env file. Consider more secure alternatives for production environments.
 Facebook's Terms of Service: Ensure that your automation activities comply with Facebook's terms and conditions.
-
 
 - ([Playwright Documentation](https://playwright.dev/python/docs/intro))
 - ([Rabbit Hole](https://hole.rabbit.tech/))

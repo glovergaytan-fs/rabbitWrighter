@@ -87,6 +87,6 @@ Security: Be cautious about storing sensitive information like passwords directl
 Facebook's Terms of Service: Ensure that your automation activities comply with Facebook's terms and conditions.
 
 
-- [Playwright Documentation](https://playwright.dev/python/docs/intro)
-- [Rabbit Hole](https://hole.rabbit.tech/)
-- [Facebook Messenger](https://www.messenger.com/)
+- ([Playwright Documentation](https://playwright.dev/python/docs/intro))
+- ([Rabbit Hole](https://hole.rabbit.tech/))
+- ([Facebook Messenger](https://www.messenger.com/))

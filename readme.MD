@@ -34,7 +34,7 @@ fb_email = os.getenv("FB_EMAIL")
 fb_password = os.getenv('FB_PASSWORD')
 
  ... rest of your code ... ```
-##Explanation:
+Explanation:
 
 Import load_dotenv:
 
@@ -76,7 +76,7 @@ Journal Entry: It navigates to your journal details page and continuously checks
 
 Facebook Messenger: If a new message entry is found, the script opens Facebook Messenger in a new tab and sends the message content to the specified Facebook contact.
 
-#Running the Script
+Running the Script
 Start the script:
 
 python fb_messenger.py
